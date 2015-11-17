@@ -1,15 +1,13 @@
 module.exports = {
+  resolve: {
+    alias: {
+      sinon: 'sinon/pkg/sinon.js'
+    }
+  },
   module: {
     noParse: [
       /node_modules\/sinon/,
     ],
-
-    resolve: {
-      alias: {
-        sinon: 'sinon/pkg/sinon.js'
-      }
-    },
-
     loaders: [
       {
         test: /\.js$/,
